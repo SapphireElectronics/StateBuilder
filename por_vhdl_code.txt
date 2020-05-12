@@ -1,0 +1,69 @@
+type POR_state_type is (
+	Reset,
+	Hold_st,
+	P_OK_st,
+	Inited_st,
+	Run_st,
+	Init_P_st,
+	Pwr_Fail_st,
+	Error
+);
+
+	POR: process( clk, rst )
+	begin
+		-- set initial state on power up
+		if rst = '0' then
+			state <= Reset;
+
+		elsif rising_edge( clk ) then
+		-- the state transitions are here
+			case state is
+				when Reset => 
+
+				when Hold_st => 
+
+				when P_OK_st => 
+
+				when Inited_st => 
+
+				when Run_st => 
+
+				when Init_P_st => 
+
+				when Pwr_Fail_st => 
+
+				when Error =>
+					state <= Error;
+
+				when others => 
+					state <= Error;
+
+			end case;
+
+		elsif falling_edge( clk ) then
+		-- the state outputs are here
+			case state is
+				when Reset => 
+
+				when Hold_st => 
+
+				when P_OK_st => 
+
+				when Inited_st => 
+
+				when Run_st => 
+
+				when Init_P_st => 
+
+				when Pwr_Fail_st => 
+
+				when Error =>
+					state <= Error;
+
+				when others => 
+					state <= Error;
+
+			end case;
+		end if
+	end process
+

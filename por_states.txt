@@ -1,0 +1,9 @@
+POR
+Reset
+Hold_st
+P_OK_st
+Inited_st
+Run_st
+Init_P_st
+Pwr_Fail_st
+Error

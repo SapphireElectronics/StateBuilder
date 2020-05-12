@@ -1,0 +1,10 @@
+mem
+Reset_st
+Hold_st
+Read_st
+R_Clr_st
+R_Sync_st
+Write_st
+W_Inh_st
+Inh_Clr_st
+Error_st

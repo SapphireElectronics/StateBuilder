@@ -1,0 +1,74 @@
+type mem_state_type is (
+	Reset_st,
+	Hold_st,
+	Read_st,
+	R_Clr_st,
+	R_Sync_st,
+	Write_st,
+	W_Inh_st,
+	Inh_Clr_st,
+	Error_st
+);
+
+	mem: process( clk, rst )
+	begin
+		-- set initial state on power up
+		if rst = '0' then
+			state <= Reset_st;
+
+		elsif rising_edge( clk ) then
+		-- the state transitions are here
+			case state is
+				when Reset_st => 
+
+				when Hold_st => 
+
+				when Read_st => 
+
+				when R_Clr_st => 
+
+				when R_Sync_st => 
+
+				when Write_st => 
+
+				when W_Inh_st => 
+
+				when Inh_Clr_st => 
+
+				when Error_st =>
+					state <= Error_st;
+
+				when others => 
+					state <= Error_st;
+
+			end case;
+
+		elsif falling_edge( clk ) then
+		-- the state outputs are here
+			case state is
+				when Reset_st => 
+
+				when Hold_st => 
+
+				when Read_st => 
+
+				when R_Clr_st => 
+
+				when R_Sync_st => 
+
+				when Write_st => 
+
+				when W_Inh_st => 
+
+				when Inh_Clr_st => 
+
+				when Error_st =>
+					state <= Error_st;
+
+				when others => 
+					state <= Error_st;
+
+			end case;
+		end if;
+	end process;
+
